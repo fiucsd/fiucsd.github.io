@@ -15,8 +15,15 @@
 		<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
+
+		<meta property="og:title" content="We are Fi" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.fiucsd.github.io/" />
+		<meta property="og:image" content="https://i.imgur.com/b9NgT2f.jpg" />
 	</head>
 	<body class="is-preload" style="overflow-x:hidden">
+
+		
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -26,16 +33,23 @@
 							<li><a href="#intro">We Are Fi</a></li>
 							<li><a href="#one">Our Story</a></li>
 							<li><a href="#two">Philosophy</a></li>
-							<li><a href="#three">Contact</a></li>
+							<li><a href="#three">Collaborate</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 
+			
+
 		<!-- Wrapper -->
 			<div id="wrapper">
+
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up" onclick="document.getElementById('foo').innerHTML = nextWord();">
+						<!-- Sticky nav -->
+						<div id="note">
+								Fi team applications are live! <a href="https://fiucsd.typeform.com/to/GVHEZ4">Click here</a>
+						</div>
 						<canvas id="c"></canvas>
 						<div class="inner" style="position: absolute;">
 
@@ -153,16 +167,16 @@
 						<div class="inner">
 							<h2>How do I get involved?</h2>
 							<p>There's several roles you can play in growing Fi. </p>
-							<p style="margin-bottom: 0%"><strong><span class="icon major fa-globe"></span>Be a client</strong></p>
-							<p>Throw any new project at us. We're ready to design for ideas of all kinds.</p>
-							<ul class="actions">
-								<li><a href="https://shanprasad.typeform.com/to/kw1JWv" class="button">Submit Project</a></li>
-							</ul>
-							<br>
 							<p style="margin-bottom: 0%"><strong><span class="icon major fa-briefcase"></span>Apply to the team</strong></p>
 							<p>We're looking for students on a rolling basis to help design new projects.</p>
 							<ul class="actions">
 								<li><a href="https://fiucsd.typeform.com/to/GVHEZ4" class="button">Apply</a></li>
+							</ul>
+							<br>
+							<p style="margin-bottom: 0%"><strong><span class="icon major fa-globe"></span>Be a client</strong></p>
+							<p>Throw any new project at us. We're ready to design for ideas of all kinds.</p>
+							<ul class="actions">
+								<li><a href="https://shanprasad.typeform.com/to/kw1JWv" class="button">Submit Project</a></li>
 							</ul>
 							<br>
 							<p style="margin-bottom: 0%"><strong><span class="icon major fa-link"></span>Get into contact</strong></p>
@@ -194,6 +208,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				close = document.getElementById("close");
+				close.addEventListener('click', function() {
+					note = document.getElementById("note");
+					note.style.display = 'none';
+				}, false);
+			</script>
 
 	</body>
 </html>
